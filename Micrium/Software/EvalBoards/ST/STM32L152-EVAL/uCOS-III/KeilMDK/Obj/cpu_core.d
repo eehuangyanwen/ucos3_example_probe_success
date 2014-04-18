@@ -1,0 +1,11 @@
+.\Obj\cpu_core.o: ..\..\..\..\..\uC-CPU\cpu_core.c
+.\Obj\cpu_core.o: ..\..\..\..\..\uC-CPU\cpu_core.h
+.\Obj\cpu_core.o: ..\..\..\..\..\uC-CPU\ARM-Cortex-M3\RealView\cpu.h
+.\Obj\cpu_core.o: ..\..\..\..\..\uC-CPU\cpu_def.h
+.\Obj\cpu_core.o: ..\..\uCOS-III\cpu_cfg.h
+.\Obj\cpu_core.o: ..\..\..\..\..\uC-LIB\lib_def.h
+.\Obj\cpu_core.o: ..\..\..\..\..\uC-LIB\lib_mem.h
+.\Obj\cpu_core.o: ..\..\..\..\..\uC-CPU\cpu_core.h
+.\Obj\cpu_core.o: ..\..\uCOS-III\KeilMDK\app_cfg.h
+.\Obj\cpu_core.o: ..\..\..\..\..\uC-LIB\lib_str.h
+.\Obj\cpu_core.o: ..\..\..\..\..\uC-LIB\lib_ascii.h
