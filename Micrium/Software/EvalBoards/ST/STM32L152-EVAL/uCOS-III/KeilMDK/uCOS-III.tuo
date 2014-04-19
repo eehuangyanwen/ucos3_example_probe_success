@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <TKStudioOptions Version="3.00" Author="YinHandong[Òüº®¶¬]">
-    <Projects OPTPES="96,96,0,0,0,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,0,0,0,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,">
+    <Projects OPTPES="96,64,0,0,0,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,64,0,0,0,0,0,0,64,0,0,0,0,0,0,0,0,0,0,64,0,0,0,96,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,">
         <Project ProjectGUID="{1E685282-AE76-47fb-BA56-3F7E787A41A3}" Name="uCOS-III" ACTCFG="uCOS-III">
             <TARGOPT Name="uCOS-III" OPTDF="0">
+                <OPTFFF VAL="&lt;..\app.c&gt; {0,1,-1,-1,25,25,848,426,204,9630}" />
                 <OPTFFF VAL="&lt;..\..\bsp\st\stm32l1xx\src\stm32l1xx_exti.c&gt; {0,1,-1,-1,75,75,575,476,18,2095}" />
-                <OPTFFF VAL="&lt;..\app.c&gt; {0,1,-1,-1,25,25,848,426,171,8690}" />
-                <OPTFFF VAL="&lt;..\..\bsp\bsp_int.c&gt; {2,3,-1,-1,0,0,430,401,424,17823}" />
+                <OPTFFF VAL="&lt;..\..\bsp\keilmdk\cstartup.s&gt; {0,1,-1,-1,75,75,575,476,125,10354}" />
                 <OPTFFF VAL="&lt;..\..\bsp\st\stm32l1xx\src\stm32l1xx_syscfg.c&gt; {0,1,-1,-1,75,75,575,476,181,8227}" />
+                <OPTFFF VAL="&lt;..\..\bsp\bsp.h&gt; {0,1,-1,-1,75,75,575,476,253,15829}" />
+                <OPTFFF VAL="&lt;..\..\bsp\bsp_int.c&gt; {0,1,-1,-1,0,0,430,401,424,17823}" />
+                <OPTFFF VAL="&lt;..\stm32l1xx.h&gt; {0,1,-1,-1,75,75,575,476,863,53587}" />
                 <OPTFFF VAL="&lt;..\..\bsp\st\stm32l1xx\src\misc.c&gt; {0,1,-1,-1,75,75,575,476,127,7492}" />
-                <OPTFFF VAL="&lt;..\..\bsp\bsp.c&gt; {0,1,-1,-1,150,150,716,551,465,6191}" />
-                <OPTFFF VAL="&lt;..\includes.h&gt; {0,1,-1,-1,75,75,575,476,60,2777}" />
+                <OPTFFF VAL="&lt;..\..\..\..\..\uc-cpu\arm-cortex-m3\realview\cpu_a.asm&gt; {0,1,-1,-1,0,0,823,424,99,4275}" />
                 <OPTFFF VAL="&lt;..\..\..\..\..\ucos-iii\ports\arm-cortex-m3\generic\realview\os_cpu_c.c&gt; {0,1,-1,-1,75,75,575,476,351,14130}" />
                 <OPTFFF VAL="&lt;..\..\bsp\st\stm32l1xx\inc\misc.h&gt; {0,1,-1,-1,75,75,575,476,54,1965}" />
-                <OPTFFF VAL="&lt;..\stm32l1xx.h&gt; {0,1,-1,-1,75,75,575,476,863,53587}" />
-                <OPTFFF VAL="&lt;..\..\bsp\bsp.h&gt; {0,1,-1,-1,75,75,575,476,253,15829}" />
-                <OPTFFF VAL="&lt;..\..\bsp\keilmdk\cstartup.s&gt; {0,1,-1,-1,75,75,575,476,125,10354}" />
-                <OPTFFF VAL="&lt;.\app_cfg.h&gt; {0,1,-1,-1,0,0,823,424,48,2788}" />
-                <OPTFFF VAL="&lt;..\..\bsp\st\stm32l1xx\inc\stm32l1xx_exti.h&gt; {0,1,-1,-1,0,0,823,424,165,2635}" />
                 <OPTFFF VAL="&lt;..\..\..\..\..\uc-cpu\arm-cortex-m3\realview\cpu.h&gt; {0,1,-1,-1,0,0,823,424,374,20953}" />
-                <OPTFFF VAL="&lt;..\..\..\..\..\uC-CPU\ARM-Cortex-M3\RealView\cpu_a.asm&gt; {0,1,-1,-1,0,0,823,424,99,4275}" />
-                <OPTFFF VAL="&lt;G:\study_soft\keil\ARM\CMSIS\Include\core_cm3.h&gt; {0,1,-1,-1,0,0,823,424,1338,88988}" />
+                <OPTFFF VAL="&lt;.\app_cfg.h&gt; {0,1,-1,-1,0,0,823,424,48,2788}" />
+                <OPTFFF VAL="&lt;..\includes.h&gt; {0,1,-1,-1,75,75,575,476,60,2777}" />
+                <OPTFFF VAL="&lt;g:\study_soft\keil\arm\cmsis\include\core_cm3.h&gt; {0,1,-1,-1,0,0,823,424,1338,88988}" />
+                <OPTFFF VAL="&lt;..\..\bsp\bsp.c&gt; {0,1,-1,-1,150,150,716,551,465,6191}" />
+                <OPTFFF VAL="&lt;..\..\bsp\st\stm32l1xx\inc\stm32l1xx_exti.h&gt; {0,1,-1,-1,0,0,823,424,81,2635}" />
+                <OPTFFF VAL="&lt;..\..\..\..\..\uCOS-III\Source\os_task.c&gt; {0,1,-1,-1,0,0,823,424,420,20634}" />
+                <OPTFFF VAL="&lt;..\..\..\..\..\ucos-iii\source\os.h&gt; {0,1,-1,-1,0,0,823,424,630,33808}" />
+                <OPTFFF VAL="&lt;..\..\..\..\..\uCOS-III\Source\os_mutex.c&gt; {2,3,-1,-1,0,0,823,424,336,16154}" />
+                <OPTFFF VAL="&lt;..\..\..\..\..\uCOS-III\Source\os_sem.c&gt; {0,1,-1,-1,0,0,823,424,57,3875}" />
             </TARGOPT>
         </Project>
     </Projects>

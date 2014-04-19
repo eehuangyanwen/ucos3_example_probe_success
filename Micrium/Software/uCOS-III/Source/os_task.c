@@ -103,7 +103,7 @@ void  OSTaskChangePrio (OS_TCB   *p_tcb,
         self  = DEF_FALSE;
     }
 
-    OS_CRITICAL_ENTER();
+    OS_CRITICAL_ENTER(); //根据在OS_CFG.H 中OS_CFG_ISR_POST_DEFERRED_EN的值来觉得关中断还是任务调度器，0关中断，1关任务调度器
     switch (p_tcb->TaskState) {
         case OS_TASK_STATE_RDY:
              OS_RdyListRemove(p_tcb);                       /* Remove from current priority                           */
