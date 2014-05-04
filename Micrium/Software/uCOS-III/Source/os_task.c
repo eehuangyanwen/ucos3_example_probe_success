@@ -246,18 +246,18 @@ void  OSTaskChangePrio (OS_TCB   *p_tcb,
 ************************************************************************************************************************
 */
 /*$PAGE*/
-void  OSTaskCreate (OS_TCB        *p_tcb,
-                    CPU_CHAR      *p_name,
-                    OS_TASK_PTR    p_task,
-                    void          *p_arg,
-                    OS_PRIO        prio,
-                    CPU_STK       *p_stk_base,
-                    CPU_STK_SIZE   stk_limit,
-                    CPU_STK_SIZE   stk_size,
-                    OS_MSG_QTY     q_size,
-                    OS_TICK        time_quanta,
-                    void          *p_ext,
-                    OS_OPT         opt,
+void  OSTaskCreate (OS_TCB        *p_tcb, //任务控制块
+                    CPU_CHAR      *p_name,  //任务名称
+                    OS_TASK_PTR    p_task,  //任务调用地址
+                    void          *p_arg,   //可以传递参数给任务
+                    OS_PRIO        prio,    //任务优先级
+                    CPU_STK       *p_stk_base, //任务堆栈
+                    CPU_STK_SIZE   stk_limit,  //任务堆栈警戒线
+                    CPU_STK_SIZE   stk_size,   //任务堆栈大小
+                    OS_MSG_QTY     q_size,     //内建消息队列大小
+                    OS_TICK        time_quanta,//轮转时间片
+                    void          *p_ext,      //TCB扩展
+                    OS_OPT         opt,        //选项
                     OS_ERR        *p_err)
 {
     CPU_STK_SIZE   i;
@@ -358,12 +358,12 @@ void  OSTaskCreate (OS_TCB        *p_tcb,
     p_stk_limit = p_stk_base + (stk_size - 1u) - stk_limit;
 #endif
 
-    p_sp = OSTaskStkInit(p_task,
+    p_sp = OSTaskStkInit(p_task,   
                          p_arg,
                          p_stk_base,
                          p_stk_limit,
                          stk_size,
-                         opt);
+                         opt);                               //将CPU内部寄存器存放在堆栈顶部，方便任务切换，直接可从这里恢复
 
                                                             /* -------------- INITIALIZE THE TCB FIELDS ------------- */
     p_tcb->TaskEntryAddr = p_task;                          /* Save task entry point address                          */

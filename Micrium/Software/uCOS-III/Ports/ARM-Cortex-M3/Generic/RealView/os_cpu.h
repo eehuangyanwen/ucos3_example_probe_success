@@ -54,7 +54,7 @@
 #define  NVIC_PENDSVSET                                    0x10000000
 #endif
 
-#define  OS_TASK_SW()               NVIC_INT_CTRL = NVIC_PENDSVSET
+#define  OS_TASK_SW()               NVIC_INT_CTRL = NVIC_PENDSVSET   //触发中断，实现任务切换
 #define  OSIntCtxSw()               NVIC_INT_CTRL = NVIC_PENDSVSET
 
 

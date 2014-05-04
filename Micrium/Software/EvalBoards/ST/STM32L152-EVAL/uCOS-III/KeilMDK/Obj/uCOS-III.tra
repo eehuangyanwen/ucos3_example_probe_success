@@ -71,7 +71,7 @@
 ### ADS-LD Output File: '.\Obj\uCOS-III.axf'
 ### ADS-LD Command File: '.\Obj\uCOS-III.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\Obj\uCOS-III.lnp', Handle=0x000003A0
+### Creating CmdFile '.\Obj\uCOS-III.lnp', Handle=0x00000910
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\Obj\uCOS-III.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

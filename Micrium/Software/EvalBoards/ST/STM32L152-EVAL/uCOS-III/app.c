@@ -54,7 +54,7 @@ static  OS_TCB   AppTaskStartTCB;
 static  CPU_STK  AppTaskStartStk[APP_CFG_TASK_START_STK_SIZE];
 
 static  CPU_BOOLEAN     AppSw;
-
+CPU_INT32U probe;
 /*
 *********************************************************************************************************
 *                                         FUNCTION PROTOTYPES
@@ -81,7 +81,7 @@ static  void  AppObjCreate          (void);
 int main(void)
 {
     OS_ERR  err;
-
+    probe=0;
 
     BSP_IntDisAll();                                            /* Disable all interrupts.                              */
     
@@ -197,7 +197,7 @@ static  void  AppTaskStart (void *p_arg)
 	BSP_EXTI_Init(&EXIT_Config);//自定义的一个配置函数
 	AppSw = DEF_TRUE;
     while (DEF_TRUE) {                                          /* Task body, always written as an infinite loop.       */
-        BSP_LED_Toggle(0);                                      /* Toggle LEDs on board                                 */
+    BSP_LED_Toggle(0);                                      /* Toggle LEDs on board                                 */
     BSP_LED_On(2);
 	//   data=GPIO_ReadInputData(GPIOA);
 	//	data&=0x01u;
@@ -212,7 +212,8 @@ static  void  AppTaskStart (void *p_arg)
 		OSTimeDlyHMSM(0, 0, 1, 0,                             /* Delay for 100 milliseconds                           */
                       OS_OPT_TIME_HMSM_STRICT, 
                       &err); 
-	BSP_LED_On(1);  
+	BSP_LED_On(1);
+  probe++;			
 	OSTimeDlyHMSM(0, 0, 1, 0,                             /* Delay for 100 milliseconds                           */
                       OS_OPT_TIME_HMSM_STRICT, 
                       &err); 

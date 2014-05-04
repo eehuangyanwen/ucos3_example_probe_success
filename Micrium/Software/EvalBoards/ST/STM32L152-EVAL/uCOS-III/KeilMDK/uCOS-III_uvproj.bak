@@ -346,7 +346,7 @@
             <uThumb>0</uThumb>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_STDPERIPH_DRIVER evan  origin3 orgin4</Define>
+              <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\uCOS-III;..\..\uCOS-III\KeilMDK;..\..\BSP;..\..\BSP\KeilMDK;..\..\BSP\OS\uCOS-III;..\..\BSP\ST\STM32L1xx\inc;..\..\..\..\..\uC-CPU;..\..\..\..\..\uC-CPU\ARM-Cortex-M3\RealView;..\..\..\..\..\uC-LIB;..\..\..\..\..\uC-LIB\Ports\ARM-Cortex-M3\RealView;..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView;..\..\..\..\..\uCOS-III\Source</IncludePath>
             </VariousControls>

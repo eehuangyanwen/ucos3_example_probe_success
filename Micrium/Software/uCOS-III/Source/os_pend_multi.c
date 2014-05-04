@@ -70,7 +70,7 @@ const  CPU_CHAR  *os_pend_multi__c = "$Id: $";
 *                                                                 aborted or deleted in this field.
 *                                    void          *RdyMsgPtr;    OSPendMulti() will fill in this field if the object
 *                                                                 posted was a message queue.  This corresponds to the
-*                                                                 message posted.
+*                                                                 message posted.(应该是消息内容的首地址与post中的一致)
 *                                    OS_MSG_SIZE    RdyMsgSize;   OSPendMulti() will fill in this field if the object
 *                                                                 posted was a message queue.  This corresponds to the
 *                                                                 size of the message posted.

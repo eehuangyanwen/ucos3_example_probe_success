@@ -53,7 +53,7 @@ const  CPU_CHAR  *os_sem__c = "$Id: $";
 *              cnt           is the initial value for the semaphore.
 *                            If used to share resources, you should initialize to the number of resources available.
 *                            If used to signal the occurrence of event(s) then you should initialize to 0.
-*
+*                            若用于通知事件发生，则这里应初始化为0，然后发生一个事件就产生一个post,使得信号量加1，然后pend就能获得
 *              p_err         is a pointer to a variable that will contain an error code returned by this function.
 *
 *                                OS_ERR_NONE                    if the call was successful
@@ -70,9 +70,9 @@ const  CPU_CHAR  *os_sem__c = "$Id: $";
 ************************************************************************************************************************
 */
 
-void  OSSemCreate (OS_SEM      *p_sem,
-                   CPU_CHAR    *p_name,
-                   OS_SEM_CTR   cnt,
+void  OSSemCreate (OS_SEM      *p_sem,                    //信号量指针
+                   CPU_CHAR    *p_name,                      //信号量名
+                   OS_SEM_CTR   cnt,                        //信号量计数值，32位
                    OS_ERR      *p_err)
 {
     CPU_SR_ALLOC();
